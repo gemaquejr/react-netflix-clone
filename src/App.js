@@ -4,6 +4,7 @@ import './App.css'
 import MovieRow from "./components/MovieRow/MovieRow";
 import FeaturedMovie from "./components/FeaturedMovie/FeaturedMovie";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 
 const App = () => {
 
@@ -51,12 +52,14 @@ const App = () => {
         <FeaturedMovie item={featuredData} />
       }
 
-
       <section className="lists">
         {movieList.map((item, key) => (
           <MovieRow key={key} title={item.title} items={item.items} />
         ))}
       </section>
+
+      <Footer />
+      
     </div >
   );
 }
