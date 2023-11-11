@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Tmdb from './services/Tmdb';
 import MovieRow from "./components/MovieRow/MovieRow";
+import './App.css'
 
 const App = () => {
 
