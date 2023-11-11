@@ -5,6 +5,7 @@ import MovieRow from "./components/MovieRow/MovieRow";
 import FeaturedMovie from "./components/FeaturedMovie/FeaturedMovie";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Loading from "./components/Loading/Loading";
 
 const App = () => {
 
@@ -59,7 +60,11 @@ const App = () => {
       </section>
 
       <Footer />
-      
+
+      {movieList.length <=0 &&
+        <Loading />
+      }
+
     </div >
   );
 }
